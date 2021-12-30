@@ -18,7 +18,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "incremental": true, // Enable incremental compilation by reading/writing information from prior compilations to a file on disk
+    "noImplicitAny": true,
   },
   "include": [
     "src"

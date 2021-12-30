@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sidebar.collapse.show,
+.sidebar.collapse.show + .col {
+  transition: .18s linear;
+  left: 0;
+}
+
+.sidebar.collapse ,
+.sidebar.collapsing,
+.sidebar.collapsing + .col {
+  transition: .18s linear;
+  z-index: 1050;
+  left: -25%;
+  height: auto !important;
+}
